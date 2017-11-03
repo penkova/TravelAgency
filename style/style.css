@@ -447,7 +447,8 @@ width: 370px;
 /*------------- NEW COMMENT -------------*/
 .comment__add{
 	width: 450px;
-	height: 30px;
+	height: auto;
+	padding-bottom: 10px;
 }
 .comment__add p{
 margin-bottom: 10px;
