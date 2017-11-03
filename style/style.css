@@ -1,0 +1,472 @@
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 720px;
+	font-size: 100%;
+	background: #FFF;
+	color: #000;
+}
+/*------------- INFORMATION -------------*/
+.container .inform{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+@media screen and (max-width: 480px) {
+	.container .inform{
+		align-items: center;
+	}
+}
+@media screen and (max-width: 360px){
+	.container .inform{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+}
+.container .inform img{
+	margin: 16px 20px 0 20px;
+	height: 125px;
+	width: 125px;
+	z-index: 1;
+}
+@media screen and (max-width: 480px) {
+	.container .inform img{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 75px;
+	width: 75px;
+	}
+}
+@media screen and (max-width: 360px){
+	.container .inform img{
+	margin-left: 5px;
+	margin-right: 10px;
+	height: 75px;
+	width: 75px;
+	}
+}
+.container .inform h1{
+	margin: 23px 0 0 0;
+	font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+	.container .inform h1{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 360px){
+	.container .inform h1{
+		font-size: 12px;
+	}
+}
+
+.container .inform p{
+	margin: 6px 0 6px 0;
+	color: #808080;
+	font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+	.container .inform p{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 360px){
+	.container .inform p{
+		font-size: 10px;
+	}
+}
+.container .inform__ad{
+	margin-left: -47px;
+	width: 375px;
+	height: 55px;
+	border-radius: 7px;
+	border: 1px solid #cecabf;
+	background-color: #fffbc8;
+	z-index: 2;
+}
+@media screen and (max-width: 480px) {
+	.container .inform__ad{
+	width: 365px;
+	}
+}
+@media screen and (max-width: 360px){
+	.container .inform__ad{
+	margin-left: -50px;
+	width: 200px;
+	}
+}
+.container .inform .inform__ad p{
+	padding: 5px 0 0 45px;
+	font-size: 14px;
+	color: #000;
+}
+@media screen and (max-width: 480px) {
+	.container .inform .inform__ad p{
+	font-size: 12px;
+	}
+}
+@media screen and (max-width: 360px){
+	.container .inform .inform__ad p{
+	font-size: 10px;
+	}
+}
+/*------------- END INFORMATION -------------*/
+/*------------- INCOME -------------*/
+.income{
+	margin-right: -100px;
+	width: 370px;
+	font-size: 13px;
+}
+@media screen and (max-width: 480px) {
+	.income{
+	width: 300px;
+	font-size: 11px;
+	}
+}
+@media screen and (max-width: 360px){
+	.income{
+	width: 200px;
+	font-size: 19px;
+	}
+}
+.income .service{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+#income__graph{
+width: 370px;
+}
+#income__graph .item p{
+	font-weight: 700;
+}
+#income__graph .item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+	white-space: nowrap;	
+}
+@media screen and (max-width: 480px) {
+	#income__graph{
+		width: 350px;
+	}
+	#income__graph .item{
+		width: 300px;
+		font-size: 11px;
+	}
+}
+@media screen and (max-width: 360px){
+	#income__graph{
+		width: 200px;
+	}
+	#income__graph .item{
+		width: 200px;
+		font-size: 9px;
+	}
+}
+#income__graph::before,
+#income__graph::after{
+	display: inline-block;
+	margin: auto;
+	content: " ";
+	width: 370px;
+	height: 1px;
+	background-color: #cccccc;
+}
+@media screen and (max-width: 480px) {
+	#income__graph::before,
+	#income__graph::after{
+		width: 300px;
+	}
+}
+@media screen and (max-width: 360px){
+	#income__graph::before,
+	#income__graph::after{
+		width: 200px;
+	}
+}
+#income__graph .item__booking, 
+#income__graph .item__tour,
+#income__graph .item__hotel{
+	border-radius: 5px;
+	border-left: none;
+	padding: 6px 0 0 7px;
+	height: 20px;
+}
+#income__graph .item__booking{
+	background-color: #b1e19b;
+}
+#income__graph .item__tour{
+	background-color: #ace2f8
+}
+#income__graph .item__hotel{
+	background-color: #ace2f8;
+}
+.income .sum p{
+	margin: 5px 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+	.income .sum p{
+	font-size: 14px;
+	}
+}
+@media screen and (max-width: 360px){
+	.income .sum p{
+	font-size: 12px;
+	}
+}
+.income .sum{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/*------------- END INCOME -------------*/
+/*------------- REVIEWS -------------*/
+.reviews{
+	width: 475px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;	
+}
+@media screen and (max-width: 480px) {
+	.reviews{
+		width: 300px;	
+	}
+}
+@media screen and (max-width: 360px){
+	.reviews{
+		width: 200px;	
+	}
+}
+.reviews .reviews__al{	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.reviews .reviews__al__icoon{
+	padding-left: 15px;
+	font-size: 12px;
+}
+.reviews .reviews__al a{
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.reviews .reviews__al__last{
+	font-size: 16px;
+	font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+	.reviews .reviews__al__icoon{
+		font-size: 10px;
+	}
+	.reviews .reviews__al a{
+		font-size: 12px;
+	}
+	.reviews .reviews__al__last{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 360px){
+	.reviews .reviews__al__icoon{
+		font-size: 8px;
+	}
+	.reviews .reviews__al a{
+		font-size: 10px;
+	}
+	.reviews .reviews__al__last{
+		font-size: 12px;
+	}
+}
+.comment{
+	display: flex;
+	flex-direction: column;
+	width: 475px;
+}
+@media screen and (max-width: 480px) {
+	.comment{
+		width: 400px;	
+	}
+}
+@media screen and (max-width: 360px){
+	.comment{
+		width: 200px;	
+	}
+}
+.comment__message p{
+	margin: 0 0 10px 0;
+}
+.comment__message{
+	position: relative;
+	padding:0 0 0 20px;
+	padding-top: 20px;
+	display: inline-block;
+	margin-bottom: 3%;
+	background-color: #f2fbff;
+	border: 1px solid #cfcfcf;
+	font-size: 14px;
+	z-index: 3;
+	box-shadow: 0 0 5px #e2e2e2;
+}
+@media screen and (max-width: 480px) {
+	.comment__message{
+		font-size: 12px;	
+	}
+}
+@media screen and (max-width: 360px){
+	.comment__message{
+		font-size: 10px;	
+	}
+}
+.comment__message::before, .comment__message::after{
+	content: ''; 
+    position: absolute;
+    border-radius: 1px;
+    left: 15px; 
+    top: -9px; 
+    border: 10px solid transparent;
+    /*border-top: 10px solid green;*/
+    border: 4px solid transparent;
+    border-bottom: 5px solid #cfcfcf; 
+    border-left: 5px solid #cfcfcf;
+	z-index: 4;
+}	
+.comment__message::after{
+	border-left: 4px solid #f2fbff;
+	border-bottom: 4px solid  #f2fbff;
+   	top: -7.5px; 
+   	left: 15.5px;
+	z-index: 5;
+}
+.comment__user{
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.comment__user__name{
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+}
+.comment__user__date{
+	margin: 0;
+	padding-left: 5px;
+	font-size: 11px;
+	color: #808080;
+}
+@media screen and (max-width: 480px) {
+	.comment__user__name{
+		font-size: 12px;
+	}
+	.comment__user__date{
+		font-size: 9px;
+	}
+}
+@media screen and (max-width: 360px){
+	.comment__user__name{
+		font-size: 10px;
+	}
+	.comment__user__date{
+		font-size: 7px;
+	}
+}
+/*------------- END REVIEWS -------------*/
+.comment__block{
+	font-family: 'PT Sans';
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+	width: 480px;
+}
+@media screen and (max-width: 480px) {
+	.comment__block{
+		width: 350px;
+	}
+}
+@media screen and (max-width: 360px){
+	.comment__block{
+		width: 200px;
+	}
+}
+.comment__your__message form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px; 
+}
+.comment__your__message #txt{
+	width: 450px;
+	height: 65px;
+}
+.comment__block [type="button"]{
+	margin-bottom: 30px;
+	width: 280px;
+	height: 50px;
+	font-size: 16px; 
+	font-weight: 700;
+	background-color: #fdd639;
+	border-radius: 40px;
+	border-style: none;
+}
+@media screen and (max-width: 480px) {
+	.comment__your__message #txt{
+		width: 300px;
+	}
+	.comment__block [type="button"]{
+		width: 200px;
+		font-size: 14px; 
+	}
+}
+@media screen and (max-width: 360px){
+	.comment__your__message #txt{
+		width: 200px;
+	}
+	.comment__block [type="button"]{
+		width: 200px;
+		font-size: 12px; 
+	}
+}
+/*------------- NEW COMMENT -------------*/
+.comment__add{
+	width: 450px;
+	height: 30px;
+}
+.comment__add p{
+margin-bottom: 10px;
+}
+.author__add{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 450px;
+}
+@media screen and (max-width: 480px) {
+	.author__add,.comment__add{
+		width: 290px; 
+	}
+}
+@media screen and (max-width: 360px){
+	.author__add,.comment__add{
+		width: 180px; 
+	}
+}
+/*------------- END NEW COMMENT -------------*/
+
