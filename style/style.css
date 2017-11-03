@@ -453,6 +453,7 @@ width: 370px;
 margin-bottom: 10px;
 }
 .author__add{
+	margin-left: 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
