@@ -13,6 +13,7 @@ window.onload = function(){
     myDate();
     startKomm();
     userName();
+    var timerId = setTimeout( document.getElementById('txt').value = "", 1000)  
         }
            function startKomm(){
             var text = document.getElementById('txt').value;
